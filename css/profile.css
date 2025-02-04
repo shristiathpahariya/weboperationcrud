@@ -1,0 +1,208 @@
+/* Reset Body and Layout */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  flex-direction: column;
+  background-color: #fff;
+  height: 25vh;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-bottom: 2px solid #f0f0f0;
+  margin-top: 10%;
+}
+
+.profile-header .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header .user-info {
+  margin-left: 20px;
+  color: #444;
+}
+
+.profile-header .user-info h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+.profile-header .user-info p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Profile Form Container */
+.profile-form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  margin: 0px auto;
+  background: #f0f4f8;
+  border-radius: 15px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1),
+    -6px -6px 15px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9%;
+  margin-top: 8%;
+}
+
+/* Input Fields */
+.profile-input-field {
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  background: #e0e5ec;
+  color: #212121;
+  font-size: 16px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.profile-input-field:focus {
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+    -6px -6px 15px rgba(255, 255, 255, 0.7);
+}
+
+.profile-input-field::placeholder {
+  color: #696868;
+}
+
+/* File Input */
+.profile-input-field[type="file"] {
+  background: #e0e5ec;
+  padding: 12px 15px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.5);
+}
+
+.profile-input-field[type="file"]:hover {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Button */
+.profile-btn {
+  width: 100%;
+  padding: 15px;
+  background: #4b8bf5;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background: #3577d4;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+    -6px -6px 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Error Message */
+.profile-error {
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Bio Section */
+.bio-container {
+  margin-top: 5px;
+}
+
+.bio-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.edit-bio-btn,
+.delete-bio-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.delete-bio-btn {
+  background-color: #e74c3c;
+}
+
+.edit-bio-btn:hover,
+.delete-bio-btn:hover {
+  opacity: 0.8;
+}
+
+/* Bio Edit Form */
+.bio-edit-form {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.bio-textarea {
+  width: 60%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+  right: 180px;
+}
+
+.update-bio-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  position: relative;
+  right: 260px;
+  top: 20px;
+}
+
+.update-bio-btn:hover {
+  opacity: 0.8;
+}
